@@ -78,7 +78,7 @@ class WebScraper(ISWebscrape):
         return pd.DataFrame(self.list_of_items)
 
     def save_to_excel(self):
-        final_data = self.find_elements()
+        final_data = self.get_data()
         return final_data.to_excel('mydata.xlsx')
 
 
