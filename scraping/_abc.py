@@ -16,3 +16,12 @@ class ISABC(abc.ABC):
         pass
 
 
+
+class StatusCodeIssue(Exception):
+    def __int__(self, arg):
+        self.msg = arg
+
+class FetchIssue(Exception):
+    def __int__(self, arg):
+        self.msg = arg
+
